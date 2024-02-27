@@ -10,7 +10,7 @@ app.get("/api", (_, res) => {
   });
 });
 
-app.get("/users/:userId", (req, res) => {
+app.get("/api/users/:userId", (req, res) => {
   // Query DB for user details
   // console.log(req.params);
   res.json({
@@ -22,8 +22,9 @@ app.get("/users/:userId", (req, res) => {
   });
 });
 
-app.get("/projects", (req, res) => {
+app.get("/api/projects", (req, res) => {
   var json = require("./projects.json");
+  console.log("Request made to /api/projects");
   res.json(json);
 });
 
