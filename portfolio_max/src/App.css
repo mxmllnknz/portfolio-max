@@ -1,0 +1,31 @@
+:root {
+    --first-color: #222831;
+    --second-color: #393e46;
+    --third-color: #f96d00;
+    --fourth-color: #f2f2f2;
+}
+
+.title-container {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: stretch;
+    min-height: 100vh;
+}
+
+.title-name {
+    background-image: url("./assets/sonny.jpg");
+    background-size: cover;
+    font-size: 250px;
+    padding-right: 15%;
+    color: var(--fourth-color);
+}
+
+.title-description {
+    color: var(--fourth-color);
+    background-color: var(--second-color);
+    text-align: left;
+    padding: 5% 2.5% 0% 2.5%;
+    a {
+        text-decoration: none;
+    }
+}
