@@ -1,0 +1,25 @@
+.sidebar-list {
+    list-style-type: none;
+    padding-left: 20px;
+}
+
+.sidebar-container {
+    width: 25%;
+    border-right: 0.25rem solid var(--second-color);
+    min-height: 100vh;
+}
+
+.sidebar-list-item {
+    margin-bottom: 10px;
+}
+
+.sidebar-button-item {
+    width: 90%;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+.highlight {
+    background-color: var(--second-color);
+}

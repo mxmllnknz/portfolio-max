@@ -2,16 +2,16 @@
   "total": 6,
   "projects": [
     {
-      "id": 1,
+      "id": 0,
       "name": "Crypto Debit Rewards Card",
       "date_begin": "May 2022",
       "date_end": "January 2023",
       "role": "Lead Engineer/Architect",
       "description": "I worked as the project designer and lead engineer for a debit card rewards program. Using a stack of Next.js, Go, and Postgres, I launched this project from the ground up and within six months, converted our existing user base (2000+ users) and handling $200,000+ in transactions. In addition to the UI and server aspects of the project, I also implemented fraud prevention using Plaid's Auth and Identity products.",
-      "image_file_name": "flycoin_debit_card.png"
+      "image_file_name": "flycoin.png"
     },
     {
-      "id": 2,
+      "id": 1,
       "name": "Machine Learning Course Teaching",
       "date_begin": "May 2021",
       "date_end": null,
@@ -20,7 +20,7 @@
       "image_file_name": "inspirit_ai.png"
     },
     {
-      "id": 3,
+      "id": 2,
       "name": "Industry Fraud Prevention Research",
       "date_begin": "August 2020",
       "date_end": "May 2021",
@@ -29,28 +29,28 @@
       "image_file_name": "jupiter.jpeg"
     },
     {
-      "id": 4,
+      "id": 3,
       "name": "Unix Operating System",
       "date_begin": "August 2020",
       "date_end": "December 2020",
       "description": "I developed a Unix operating system that supported dynamic memory, multiprocessing, on-disk filesystem, IPC, and a network driver for an emulated E1000 network card.",
-      "image_file_name": "xv6_memory_map.png"
+      "image_file_name": "memmap.png"
     },
     {
-      "id": 5,
+      "id": 4,
       "name": "Robosub Controls System",
       "date_begin": "September 2019",
       "date_end": "May 2021",
       "description": "I researched various control systems including MPC and LQR and implemented a robust thrust allocator for an operational AUV using the robot’s dynamics. I also organized a team of five students to develop a PID control system using ROS while teaching them C++.",
-      "image_file_name": "muddsub_alfie.png"
+      "image_file_name": "alfie.png"
     },
     {
-      "id": 6,
+      "id": 5,
       "name": "Mudd Amateur Rocketry Club: Journey to Space",
       "date_begin": "August 2018",
       "date_end": "May 2019",
       "description": "I researched different types of solid propellant fuels and helped evaluate the fuel expectations for a rocket attempting to reach 100km vertically. We decided to use Ammonium Perchlorate with HTPB as a binder and I helped manufacture a test batch with which we could perform impulse tests.",
-      "image_file_name": "marc_jts.png"
+      "image_file_name": "mars_jts.png"
     }
   ]
 }

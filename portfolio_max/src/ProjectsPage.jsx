@@ -1,6 +1,18 @@
+import { useState } from "react";
 import { useQuery } from "@tanstack/react-query";
+import Sidebar from "./components/sidebar";
+import "./ProjectsPage.css";
+import {
+  Alfie,
+  Flycoin,
+  Inspirit_AI,
+  Jupiter,
+  Memmap,
+  Mars_JTS,
+} from "./assets";
 
 function ProjectsPage() {
+  const [activeProjectId, setActiveProjectId] = useState(0);
   const { isPending, isError, data, error } = useQuery({
     queryKey: ["projects"],
     queryFn: async () => {
@@ -13,6 +25,8 @@ function ProjectsPage() {
     staleTime: Infinity,
   });
 
+  const images = [Flycoin, Inspirit_AI, Jupiter, Memmap, Alfie, Mars_JTS];
+
   if (isPending) {
     return <span>Loading...</span>;
   }
@@ -22,10 +36,25 @@ function ProjectsPage() {
   }
 
   return (
-    <div className="projects-container">
-      {data.projects.map((datum) => {
-        return <div key={`project-${datum.id}`}>{datum.name}</div>;
-      })}
+    <div className="projects-page-container">
+      <Sidebar
+        data={data.projects}
+        activeId={activeProjectId}
+        onChange={(id) => setActiveProjectId(id)}
+      />
+      <div className="project-container">
+        <div className="project-title">
+          {data.projects[activeProjectId].name}
+        </div>
+        <div className="project-body">
+          <div className="project-image">
+            <img src={images[activeProjectId]} />
+          </div>
+          <div className="project-description">
+            {data.projects[activeProjectId].description}
+          </div>
+        </div>
+      </div>
     </div>
   );
 }

@@ -1,0 +1,35 @@
+.projects-page-container {
+    display: flex;
+    justify-content: left;
+}
+
+.project-container {
+    flex-grow: 1;
+}
+
+.project-body {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding-left: 2.5%;
+}
+
+.project-title {
+    text-align: center;
+    font-size: 48px;
+    margin-bottom: 2.5%;
+    padding-left: 2.5%;
+    background-color: var(--first-color);
+}
+
+.project-image {
+    img {
+        max-width: 100%;
+        max-height: auto;
+    }
+    margin-right: 1.5%;
+}
+
+.project-description {
+    font-size: 18px;
+}
