@@ -13,6 +13,7 @@ const queryClient = new QueryClient();
 const router = createBrowserRouter([
   {
     path: "/",
+    index: true,
     element: <App />,
     errorElement: <ErrorPage />,
   },
