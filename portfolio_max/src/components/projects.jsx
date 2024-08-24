@@ -1,7 +1,7 @@
 import { useState } from "react";
-import Sidebar from "./components/sidebar";
-import "./ProjectsPage.css";
-import data from "./data/projects.json";
+import Sidebar from "./sidebar";
+import "./projects.css";
+import data from "../data/projects.json";
 import {
   Alfie,
   Flycoin,
@@ -9,9 +9,9 @@ import {
   Jupiter,
   Memmap,
   Mars_JTS,
-} from "./assets";
+} from "../assets";
 
-function ProjectsPage() {
+function Projects() {
   const [activeProjectId, setActiveProjectId] = useState(0);
   const images = [Flycoin, Inspirit_AI, Jupiter, Memmap, Alfie, Mars_JTS];
 
@@ -39,4 +39,4 @@ function ProjectsPage() {
   );
 }
 
-export default ProjectsPage;
+export default Projects;

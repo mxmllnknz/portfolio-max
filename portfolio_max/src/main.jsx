@@ -2,7 +2,6 @@ import React from "react";
 import ReactDOM from "react-dom/client";
 import App from "./App.jsx";
 import ErrorPage from "./ErrorPage.jsx";
-import ProjectsPage from "./ProjectsPage.jsx";
 import "./index.css";
 import {
   createBrowserRouter,
@@ -21,19 +20,9 @@ const queryClient = new QueryClient();
 // TODO: Still doesn't seem to be working
 const router = createBrowserRouter([
   {
-    path: "/projects",
-    element: <ProjectsPage />,
-    errorElement: <ErrorPage />,
-  },
-  {
     path: "/",
     index: true,
     element: <App />,
-    errorElement: <ErrorPage />,
-  },
-  {
-    path: "/index.html",
-    element: <Navigate to="/" replace={true} />,
     errorElement: <ErrorPage />,
   },
 ]);
