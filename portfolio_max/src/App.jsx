@@ -61,10 +61,10 @@ function App() {
         </div>*/}
       </div>
       <div ref={introRef}>
-        <Block orientation="left" img={Alfie}>
+        <Block orientation="left" img="placeholder.jpg">
           <p>
-            Hi! My name is Max and I designed this website and completed all of
-            the projects{" "}
+            Hi! My name is Max and I designed this website and worked (or am
+            currently working on) on all of the projects{" "}
             <Link
               className="project-inline-link"
               to="/"

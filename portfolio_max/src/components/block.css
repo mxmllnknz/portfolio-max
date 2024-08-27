@@ -1,0 +1,11 @@
+.block-container {
+    display: flex;
+    justify-content: space-between;
+    color: var(--fourth-color);
+    background-color: var(--second-color);
+    text-align: left;
+    padding: 12.5% 2.5% 18% 2.5%;
+    a {
+        text-decoration: none;
+    }
+}

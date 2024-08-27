@@ -43,7 +43,7 @@
 /* set arrow styles */
 .arrow path {
     stroke: var(--third-color);
-    stroke-width: 10px;
+    stroke-width: 7px;
     fill: transparent;
     animation: down 2s infinite;
 }
