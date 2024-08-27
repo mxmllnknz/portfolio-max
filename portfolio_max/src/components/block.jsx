@@ -1,9 +1,9 @@
 import "./block.css";
 
-function Block({ orientation, img, children }) {
+function Block({ orient_left, img, children }) {
   return (
     <>
-      {orientation == "left" ? (
+      {orient_left ? (
         <div className="block-container">
           <div className="block-image-container">
             <img src={`src/assets/${img}`} />

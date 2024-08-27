@@ -5,13 +5,13 @@
 
 .project-container {
     flex-grow: 1;
+    background-color: white;
 }
 
 .project-body {
-    display: flex;
-    justify-content: space-around;
     align-items: center;
     padding-left: 2.5%;
+    padding-right: 2.5%;
 }
 
 .project-title {
@@ -31,5 +31,8 @@
 }
 
 .project-description {
+    border-top: 1px solid black;
     font-size: 18px;
+    color: black;
+    padding: 2.5% 15% 2.5% 10%;
 }

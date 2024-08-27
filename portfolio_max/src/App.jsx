@@ -61,19 +61,40 @@ function App() {
         </div>*/}
       </div>
       <div ref={introRef}>
-        <Block orientation="left" img="placeholder.jpg">
-          <p>
-            Hi! My name is Max and I designed this website and worked (or am
-            currently working on) on all of the projects{" "}
-            <Link
-              className="project-inline-link"
-              to="/"
-              onClick={() => scrollToRef(projectRef)}
-            >
-              below
-            </Link>
-            .
-          </p>
+        <Block orient_left={false} img="placeholder.jpg">
+          <div className="title-description">
+            <h3> Who am I?</h3>
+            <p>
+              Hi! My name is Max and I designed this website and worked (or am
+              currently working on) on all of the projects{" "}
+              <Link
+                className="project-inline-link"
+                to="/"
+                onClick={() => scrollToRef(projectRef)}
+              >
+                below
+              </Link>
+              .
+            </p>
+            <p>
+              I love learning new technical concepts and generally interesting
+              ideas or facts. I studied Computer Science with a minor in
+              History. I have worked in cybersecurity, web development, computer
+              science education professionally, and personally, I&apos;m most
+              interested in low-level systems like exploring experimental file
+              systems and understanding embedded systems.
+            </p>
+            <p>
+              In my free time, I&apos;ve been learning how to bake a variety of
+              breads: sourdough, French, brioche, etc. I also play the electric
+              bass and I love to read Science Fiction and Fantasy books.
+            </p>
+            <p>
+              I&apos;m the proud father of a stubborn Korean Jindo named Sonny
+              who loves his mother over me even though I feed him, walk him, and
+              clean up after him.
+            </p>
+          </div>
         </Block>
       </div>
       <div ref={projectRef}>

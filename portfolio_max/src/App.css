@@ -21,6 +21,7 @@
 }
 
 .title-description {
+    font-size: 18px;
     color: var(--fourth-color);
     background-color: var(--second-color);
     text-align: left;
