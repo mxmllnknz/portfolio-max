@@ -21,7 +21,8 @@
 }
 
 .title-description {
-    font-size: 18px;
+    font-size: 1.2rem;
+    max-width: 65ch;
     color: var(--fourth-color);
     background-color: var(--second-color);
     text-align: left;

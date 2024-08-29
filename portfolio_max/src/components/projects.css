@@ -16,7 +16,7 @@
 
 .project-title {
     text-align: center;
-    font-size: 48px;
+    font-size: 3rem;
     margin-bottom: 2.5%;
     padding-left: 2.5%;
     background-color: var(--first-color);
@@ -32,7 +32,8 @@
 
 .project-description {
     border-top: 1px solid black;
-    font-size: 18px;
+    max-width: 65ch;
+    font-size: 1.1rem;
     color: black;
     padding: 2.5% 15% 2.5% 10%;
 }
