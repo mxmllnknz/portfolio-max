@@ -1,0 +1,14 @@
+.block-container {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: stretch;
+    min-height: 100svh;
+    color: var(--fourth-color);
+    background-color: var(--second-color);
+    text-align: left;
+    padding-top: 5%;
+    border-bottom: 10px solid black;
+    a {
+        text-decoration: none;
+    }
+}

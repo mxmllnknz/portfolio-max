@@ -1,7 +1,7 @@
 :root {
     --first-color: #222831;
     --second-color: #393e46;
-    --third-color: #f96d00;
+    --third-color: #089648;
     --fourth-color: #f2f2f2;
 }
 
@@ -17,10 +17,12 @@
     background-size: cover;
     font-size: 250px;
     padding-right: 15%;
-    color: var(--fourth-color);
+    color: var(--third-color);
 }
 
 .title-description {
+    font-size: 1.2rem;
+    max-width: 65ch;
     color: var(--fourth-color);
     background-color: var(--second-color);
     text-align: left;
@@ -28,4 +30,47 @@
     a {
         text-decoration: none;
     }
+}
+
+/* set arrow positioning */
+.arrow {
+    width: 60px;
+    height: 82px;
+    position: absolute; /* don't forget set container to relative */
+    left: 49%;
+    margin-left: 0px;
+    bottom: 5%;
+    z-index: 999;
+}
+/* set arrow styles */
+.arrow path {
+    stroke: var(--third-color);
+    stroke-width: 7px;
+    fill: transparent;
+    animation: down 2s infinite;
+}
+/* arrow keyframe animation */
+@keyframes down {
+    0% {
+        opacity: 0;
+    }
+    25% {
+        opacity: 1;
+    }
+    75% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+/* arrow animation delay */
+.arrow path.a1 {
+    animation-delay: -1s;
+}
+.arrow path.a2 {
+    animation-delay: -0.5s;
+}
+.arrow path.a3 {
+    animation-delay: 0s;
 }
