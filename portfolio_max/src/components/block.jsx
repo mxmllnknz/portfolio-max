@@ -6,7 +6,7 @@ function Block({ orient_left, img, children }) {
       {orient_left ? (
         <div className="block-container">
           <div className="block-image-container">
-            <img src={`src/assets/${img}`} />
+            <img src={img} />
           </div>
           <div className="block-text-container">{children}</div>
         </div>
@@ -14,7 +14,7 @@ function Block({ orient_left, img, children }) {
         <div className="block-container">
           <div className="block-text-container">{children}</div>
           <div className="block-image-container">
-            <img src={`src/assets/${img}`} />
+            <img src={img} />
           </div>
         </div>
       )}

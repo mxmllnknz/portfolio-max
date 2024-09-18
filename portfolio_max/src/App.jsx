@@ -3,6 +3,7 @@ import { Link } from "react-router-dom";
 import { useRef } from "react";
 import Projects from "./components/projects";
 import Block from "./components/block";
+import { Max_Profile } from "./assets";
 
 function App() {
   const projectRef = useRef(null);
@@ -31,7 +32,7 @@ function App() {
         </svg>
       </div>
       <div ref={introRef}>
-        <Block orient_left={false} img="max_profile.jpeg">
+        <Block orient_left={false} img={Max_Profile}>
           <div className="title-description">
             <h3> Who am I?</h3>
             <p>
