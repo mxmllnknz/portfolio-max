@@ -3,7 +3,6 @@ import { Link } from "react-router-dom";
 import { useRef } from "react";
 import Projects from "./components/projects";
 import Block from "./components/block";
-import { Alfie, Sonny } from "./assets";
 
 function App() {
   const projectRef = useRef(null);
@@ -21,7 +20,10 @@ function App() {
   return (
     <div className="app-container">
       <div className="title-container">
-        <div className="title-name">MAX KUNZ</div>
+        <div className="title-name">
+          <div className="title-first-name">MAX</div>
+          <div className="title-last-name">KUNZ</div>
+        </div>
         <svg className="arrow" onClick={() => scrollToRef(introRef)}>
           <path className="a1" d="M0 0 L30 22 L60 0"></path>
           <path className="a2" d="M0 20 L30 42 L60 20"></path>
