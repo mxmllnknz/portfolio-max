@@ -13,10 +13,12 @@
 }
 
 .title-name {
+    display: flex;
     background-image: url("./assets/sonny.jpg");
     background-size: cover;
-    font-size: 250px;
-    padding-right: 15%;
+    font-size: 17vw;
+    padding-right: 15rem;
+    padding-left: 5rem;
     color: var(--third-color);
 }
 
@@ -26,7 +28,7 @@
     color: var(--fourth-color);
     background-color: var(--second-color);
     text-align: left;
-    padding: 5% 2.5% 0% 2.5%;
+    padding: 0% 2.5% 0% 2.5%;
     a {
         text-decoration: none;
     }
@@ -73,4 +75,16 @@
 }
 .arrow path.a3 {
     animation-delay: 0s;
+}
+
+@media (max-width: 700px) {
+    .title-name {
+        display: flex;
+        background-image: url("./assets/sonny.jpg");
+        background-size: cover;
+        font-size: 30vw;
+        padding-right: 15rem;
+        padding-left: 15rem;
+        color: var(--third-color);
+    }
 }

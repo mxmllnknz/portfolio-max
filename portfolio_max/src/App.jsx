@@ -29,7 +29,7 @@ function App() {
         </svg>
       </div>
       <div ref={introRef}>
-        <Block orient_left={false} img="placeholder.jpg">
+        <Block orient_left={false} img="max_profile.jpeg">
           <div className="title-description">
             <h3> Who am I?</h3>
             <p>
