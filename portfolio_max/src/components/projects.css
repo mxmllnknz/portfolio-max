@@ -37,3 +37,16 @@
     color: black;
     padding: 2.5% 15% 2.5% 10%;
 }
+
+@media (max-width: 1000px) {
+    .projects-page-container {
+        display: flex;
+        justify-content: left;
+        flex-direction: column;
+    }
+    .project-container {
+        flex-grow: 1;
+        background-color: white;
+        border-bottom: 10px solid black;
+    }
+}
