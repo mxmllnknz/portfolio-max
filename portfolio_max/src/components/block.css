@@ -30,7 +30,7 @@
         display: flex;
         flex-direction: column;
         justify-content: space-between;
-        align-items: stretch;
+        align-items: center;
         min-height: 100svh;
         color: var(--fourth-color);
         background-color: var(--second-color);
@@ -42,5 +42,14 @@
         img {
             padding-bottom: 5rem;
         }
+    }
+    .block-text-container {
+        padding: 1rem;
+        padding-bottom: 5rem;
+    }
+
+    .block-image-container {
+        width: 85%;
+        text-align: center;
     }
 }

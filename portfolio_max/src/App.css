@@ -6,16 +6,16 @@
 }
 
 .title-container {
-    display: flex;
     justify-content: space-evenly;
+    background-image: url("./assets/sonny.jpg");
+    background-size: cover;
     align-items: stretch;
     min-height: 100vh;
 }
 
 .title-name {
     display: flex;
-    background-image: url("./assets/sonny.jpg");
-    background-size: cover;
+    flex-direction: column;
     font-size: 17vw;
     padding-right: 15rem;
     padding-left: 5rem;
@@ -41,7 +41,7 @@
     position: absolute; /* don't forget set container to relative */
     left: 49%;
     margin-left: 0px;
-    bottom: 5%;
+    bottom: 3%;
     z-index: 999;
 }
 /* set arrow styles */
@@ -78,13 +78,22 @@
 }
 
 @media (max-width: 700px) {
-    .title-name {
-        display: flex;
+    .title-container {
+        justify-content: space-evenly;
         background-image: url("./assets/sonny.jpg");
         background-size: cover;
+        background-position-x: 55%;
+        min-height: 100vh;
+    }
+    .title-name {
+        display: flex;
         font-size: 30vw;
         padding-right: 15rem;
-        padding-left: 15rem;
+        padding-left: 4%;
         color: var(--third-color);
+    }
+
+    .arrow {
+        display: none;
     }
 }
