@@ -37,7 +37,7 @@ function Projects() {
   return (
     <div className="projects-page-container">
       {!isMobile ? (
-        <div>
+        <>
           <Sidebar
             data={data.projects}
             activeId={activeProjectId}
@@ -56,7 +56,7 @@ function Projects() {
               </div>
             </div>
           </div>
-        </div>
+        </>
       ) : (
         data.projects.map((project, idx) => {
           return (
